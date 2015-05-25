@@ -1,12 +1,20 @@
 package com.meruvian.simplelogin.simplelogin;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 
-public class UserActivity extends ActionBarActivity {
+public class UserActivity extends AppCompatActivity {
+    private static EditText username;
+    private static EditText password;
+    private static TextView attempts;
+    private static Button login_btn;
+    int attempts_count=5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
